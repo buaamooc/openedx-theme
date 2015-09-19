@@ -1,0 +1,41 @@
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+
+<%inherit file="/main.html" />
+
+<%block name="title"><title>联系方式</title></%block>
+
+<section class="container about">
+
+  <section class="vision">
+
+    <section class="message left" id="contact">
+      <div class="photo">
+        <img src="${static.url('themes/buaa/images/dish.jpg')}" alt="Beihang University" />
+      </div>
+      <article id="beihang-OpenEdX-contact">
+        <h2>联系信息</h2>
+        <p><strong>反馈信息发邮件到：</strong><br />
+        <a href="mailto:feedback@mooc.buaa.edu.cn"><img src="${static.url('themes/buaa/images/feedback.png')}" /></a></p>
+
+        <p><strong>技术支持发邮件到：</strong><br />
+        <a href="mailto:support@mooc.buaa.edu.cn"><img src="${static.url('themes/buaa/images/support.png')}" /></a></p>
+      </article>
+      <script>
+        $(function() {
+          var ua = navigator.userAgent;
+          
+          $('#beihang-OpenEdX-contact a').each(function() {
+            var href = $(this).attr('href') + "?body=User Agent String: " + ua + "（以上内容是自动生成的关于您的浏览器类型与版本的信息，当您提交错误报告或反馈技术问题时，请勿删除这些信息）";
+            if (!$(this).hasClass('external')) {
+              $(this).attr('href', href);
+            }
+          });
+        });
+      </script>
+      <hr class="fade-right-hr-divider">
+    </section>
+
+  </section>
+
+</section>

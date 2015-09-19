@@ -1,0 +1,35 @@
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+
+<%inherit file="/main.html" />
+
+<%block name="title"><title>常见问题</title></%block>
+
+<section class="container about">
+
+  <section class="vision">
+
+    <section class="message left" id="faq">
+      <div class="photo">
+        <img src="${static.url('themes/buaa/images/memchu.jpg')}" alt="Beihang University" />
+      </div>
+      <article>
+        <h2>常见问题</h2>
+        <p><strong>推荐使用哪些浏览器访问北航学堂？</strong><br />
+       为了您顺利地完成课程学习，建议您将浏览器升级到最新版本。北航学堂支持的浏览器包括：<a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">Internet Explorer</a> 9.0及以上版本、<a href="http://chrome.google.com/">Google Chrome</a> 24及以上版本、<a href="http://www.mozilla.org/firefox">Mozilla Firefox</a> 21及以上版本、<a href="http://www.apple.com/safari/">Apple Safari</a> 6.0及以上版本等。</p>
+		
+		<p><strong>为什么我的课程视频一直处于缓冲状态？</strong><br />
+		如果您遇到该情况，请将您所在的区域、网络类型（例如北京联通10M宽带）、IP地址、联系方式（QQ或手机）通过邮件反馈给我们，我们会请视频技术客服人员跟你联系，帮您解决问题。</p>
+
+        <p><strong>如果我是一个北航的老师，我想在校内或面向公众使用本平台，我应该如何做？</strong><br />
+        <a href="mailto:course@mooc.buaa.edu.cn">点击这里取得联系</a></p>
+
+        <p><strong>如果我在另一所大学，我想了解使用此开源平台，我应该与谁取得联系？</strong><br />
+        <a href="mailto:contact@mooc.buaa.edu.cn">点击这里取得联系</a></p>
+      </article>
+      <hr class="fade-right-hr-divider">
+    </section>
+
+  </section>
+
+</section>

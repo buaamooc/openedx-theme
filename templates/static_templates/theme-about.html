@@ -1,0 +1,28 @@
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+
+<%inherit file="/main.html" />
+
+<%block name="title"><title>关于 北航学堂</title></%block>
+
+<section class="container about">
+
+  <section class="vision">
+
+    <section class="message left" id="about">
+      <div class="photo">
+        <img src="${static.url('themes/buaa/images/quad.jpg')}" alt="BUAA Quad with New Main Building" />
+          <!-- Image Copyright owned by Giulio Gratta -->
+      </div>
+      <article>
+        <h2>关于 <span class="edx">北航学堂</span></h2>
+        
+        <p>北航学堂正在开发新的在线课程，以改进学校教育，为公众提供优秀的学习机会。</p>
+        <p>以北京航空航天大学计算机学院为主体的开发团队基于<a href="http://openedx.org">OpenEdX</a> 平台开发了北航学堂。</p>
+      </article>
+      <hr class="fade-right-hr-divider">
+    </section>
+
+  </section>
+
+</section>
